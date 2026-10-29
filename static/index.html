@@ -1,7 +1,0 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>本地语音识别</title><link rel="stylesheet" href="/static/style.css"></head>
-<body><main><header><span class="eyebrow">LOCAL AI · SPEECH TO TEXT</span><h1>本地语音识别</h1><p>音频在本机处理，支持中文与英文。</p></header>
-<section class="panel"><div class="controls"><label>识别语言<select id="language"><option value="zh">中文</option><option value="en">English</option></select></label><button id="start">开始录音</button><button id="stop" disabled>停止录音</button><label class="live"><input id="live" type="checkbox"> 实时识别（实验）</label></div>
-<div id="status" role="status">就绪。可以录音或选择音频文件。</div><div class="meter"><span id="clock">00:00</span><span id="mode"></span></div>
-<label class="upload">或上传音频文件（WAV、WebM 等，最大 10 MB）<input id="file" type="file" accept="audio/*,.wav"></label>
-<div class="result-head"><h2>识别结果</h2><button id="copy" class="secondary">复制文字</button></div><textarea id="result" placeholder="识别文字会显示在这里" readonly></textarea>
-<p class="stats">音频时长：<b id="duration">—</b><span>处理耗时：<b id="elapsed">—</b></span></p></section><footer>模型首次运行需下载权重；之后可离线识别。</footer></main><script src="/static/app.js"></script></body></html>
